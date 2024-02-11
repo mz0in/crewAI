@@ -1,0 +1,1471 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "user", "content": "You are Crew Manager.\nYou are
+      a seasoned manager with a knack for getting the best out of your team.\nYou
+      are also known for your ability to delegate work to the right people, and to
+      ask the right questions to get the best out of your team.\nEven though you don''t
+      perform tasks by yourself, you have a lot of experience in the field, which
+      allows you to properly evaluate the work of your team members.\n\nYour personal
+      goal is: Manage the team to complete the task in the best way possible.TOOLS:\n------\nYou
+      have access to only the following tools:\n\nDelegate work to co-worker: Delegate
+      work to co-worker(coworker: str, task: str, context: str) - Delegate a specific
+      task to one of the following co-workers: Researcher, Senior Writer. The input
+      to this tool should be the role of the coworker, the task you want them to do,
+      and ALL necessary context to exectue the task, they know nothing about the task,
+      so share absolute everything you know, don''t reference things but instead explain
+      them.\nAsk question to co-worker: Ask question to co-worker(coworker: str, question:
+      str, context: str) - Ask a specific question to one of the following co-workers:
+      Researcher, Senior Writer. The input to this tool should be the role of the
+      coworker, the question you have for them, and ALL necessary context to ask the
+      question properly, they know nothing about the question, so share absolute everything
+      you know, don''t reference things but instead explain them.\n\nTo use a tool,
+      please use the exact following format:\n\n```\nThought: Do I need to use a tool?
+      Yes\nAction: the tool you wanna use, should be one of [Delegate work to co-worker,
+      Ask question to co-worker], just the name.\nAction Input: Any and all relevant
+      information input and context for using the tool\nObservation: the result of
+      using the tool\n```\n\nWhen you have a response for your task, or if you do
+      not need to use a tool, you MUST use the format:\n\n```\nThought: Do I need
+      to use a tool? No\nFinal Answer: [your response here]```This is the summary
+      of your work so far:\nBegin! This is VERY important to you, your job depends
+      on it!\n\nCurrent Task: Come up with a list of 5 interesting ideas to explore
+      for an article, then write one amazing paragraph highlight for each idea that
+      showcases how good an article about this topic could be. Return the list of
+      ideas with their paragraph and your notes.\n"}], "model": "gpt-4", "n": 1, "stop":
+      ["\nObservation"], "stream": false, "temperature": 0.0}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '2515'
+      content-type:
+      - application/json
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4RTy27bMBC8+ysGOtuB3cSJq0vRJiiQntI0aNAXDJpaS2woLkOuYqdB/r0gJdv1
+        qReB2NmZHa6GLyOgMFVRotCNEt16O1k8Vh8Xf2635766V4sP0++fTs+23eebS/7KX4pxYvDqN2nZ
+        sU40t96SGHY9rAMpoaQ6u5hezOdn87eLDLRckU202svkbDI9n50OjIaNpliU+DECgJf8Td5cRdui
+        xHS8q7QUo6qpKPdNQBHYpkqhYjRRlJNifAA1OyGX7d413NWNlLhiXMMRVRBGFwkKwmzf4RvFn+69
+        TpcpcUWWaiWEDYeH1Kl5ko4Udj24dr6TEpr7eolbiqSCbiiMISo+lLjkltB5bIw0ULAmCniNOYwT
+        ChTFuBqmIhXTCNp6y4Gw5gDloIIYbWmMfIutlLinvfF+0f/RPBY6wV1DkQYsNtzZCitC58xjR2OQ
+        q1VtXD2GchUCWXpSTtIw7gJUVxlyuld5/ocu7I2OkEZJbgykKgoRm9ywNq46cpa0e2gzqCcC2nRx
+        teJO8oDBpFYujch1KPcsTfa36gRy7CJySxntjWwoczfB5CWlmJK1eX6/jN2sG0sqEnzgJ1Ol1lUw
+        tEZFUQfj839OWySlm+zpBMUQr9d9Li3XPvAqZdh11u7ra+NMbJaBVGSXMhiFfU9/HQG/cv67o0gX
+        PnDrZSn8QC4Jzk9nvV5xeGoHdPbmYkCFRdkDcD5fjAaLRXyOQu1ybVxNwQeT30MyOnod/QUAAP//
+        AwDQRWCvBgQAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8533104f5c9ed029-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:43:25 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=EBAvl3g_XqkWdcmiw8Ml6O7WPWo5VXs8r3SwmJVLUZw-1707554605-1-AUZKfV35H8Wp5ossrlc6jtZ9dhgqLrVrl+ZF0jOXXdI0dpVcIvTttF7f8Pl5ZI2Pih3rfueXBSRF9vmqggAOPCk=;
+        path=/; expires=Sat, 10-Feb-24 09:13:25 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=pTnBIy95g3oEDKgA4dLOO3E_dCa6hkilxXzbh8LPWMM-1707554605073-0-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '6689'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299395'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 121ms
+      x-request-id:
+      - req_0c73043a5c57cfe6b00f8ff7bb6313fe
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "Return a valid schema for the
+      one tool you must use with its arguments and values.\n\nTools available:\n\nFuntion
+      Name: Delegate work to co-worker\nFuntion attributes: {''coworker'': {''type'':
+      ''string''}, ''task'': {''type'': ''string''}, ''context'': {''type'': ''string''}}\nDescription:
+      Delegate work to co-worker(coworker: str, task: str, context: str) - Delegate
+      a specific task to one of the following co-workers: Researcher, Senior Writer.
+      The input to this tool should be the role of the coworker, the task you want
+      them to do, and ALL necessary context to exectue the task, they know nothing
+      about the task, so share absolute everything you know, don''t reference things
+      but instead explain them.\n--\nFuntion Name: Ask question to co-worker\nFuntion
+      attributes: {''coworker'': {''type'': ''string''}, ''question'': {''type'':
+      ''string''}, ''context'': {''type'': ''string''}}\nDescription: Ask question
+      to co-worker(coworker: str, question: str, context: str) - Ask a specific question
+      to one of the following co-workers: Researcher, Senior Writer. The input to
+      this tool should be the role of the coworker, the question you have for them,
+      and ALL necessary context to ask the question properly, they know nothing about
+      the question, so share absolute everything you know, don''t reference things
+      but instead explain them.\n\nUse this text to inform a valid ouput schema:\nThought:
+      Do I need to use a tool? Yes\nAction: Delegate work to co-worker\nAction Input:
+      coworker: Researcher, task: Come up with a list of 5 interesting ideas to explore
+      for an article, context: We need to create a list of 5 interesting ideas for
+      an article. These ideas should be unique, engaging, and relevant to our audience.
+      They should be topics that our readers would find interesting and would want
+      to read more about. The ideas can be about anything, but they should be something
+      that we can write a compelling article about. Please provide a brief description
+      for each idea. \n\nThe output should be formatted as a JSON instance that conforms
+      to the JSON schema below.\n\nAs an example, for the schema {\"properties\":
+      {\"foo\": {\"title\": \"Foo\", \"description\": \"a list of strings\", \"type\":
+      \"array\", \"items\": {\"type\": \"string\"}}}, \"required\": [\"foo\"]}\nthe
+      object {\"foo\": [\"bar\", \"baz\"]} is a well-formatted instance of the schema.
+      The object {\"properties\": {\"foo\": [\"bar\", \"baz\"]}} is not well-formatted.\n\nHere
+      is the output schema:\n```\n{\"properties\": {\"function_name\": {\"title\":
+      \"Function Name\", \"description\": \"The name of the function to be called.\",
+      \"type\": \"string\"}, \"arguments\": {\"title\": \"Arguments\", \"description\":
+      \"A dictinary of arguments to be passed to the function.\", \"type\": \"object\"}},
+      \"required\": [\"function_name\", \"arguments\"]}\n```\n```"}], "model": "gpt-4",
+      "n": 1, "stream": false, "temperature": 0.0}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '2898'
+      content-type:
+      - application/json
+      cookie:
+      - __cf_bm=EBAvl3g_XqkWdcmiw8Ml6O7WPWo5VXs8r3SwmJVLUZw-1707554605-1-AUZKfV35H8Wp5ossrlc6jtZ9dhgqLrVrl+ZF0jOXXdI0dpVcIvTttF7f8Pl5ZI2Pih3rfueXBSRF9vmqggAOPCk=;
+        _cfuvid=pTnBIy95g3oEDKgA4dLOO3E_dCa6hkilxXzbh8LPWMM-1707554605073-0-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4RTwW7bMAy95ysInZMibZOmy3VDt2E7DEOxrZiHRJFoW61MuhLdpCvy74NkJ21O
+        uxgGH9/jE/X0MgJQzqolKFNrMU3rJ9eP9ubmwt1/ifWvvze3u/ns68cfnz7P7t5d7ESNE4M392jk
+        wDoz3LQexTH1sAmoBZPq+WK6mM9nV9N5Bhq26BOtamUym0yvzi8HRs3OYFRL+D0CAHjJ3+SNLO7U
+        EqbjQ6XBGHWFanlsAlCBfaooHaOLoqn3OYCGSZCy3fV6XdBLQQCFKjsyyfOKdIOFWkKhPqDHSgvC
+        lsMDCIPhSfrFUKhxz9Kh6hokiYmRlVLV8KEtyXzHiDqY+khLLaLjQw+/5waha2HrpAYN3kUBLmEO
+        jgQDRnFUgbOoY7KAu9ZzQCg5gCbQQZzx+EY4H28nvfZPBEK02Xu+hf8MOFU9g9saIw5YrLnzFjYI
+        HbnHDseAVOnKUTUGTRYCenzSJGkYdwF0Zx2S6VWe39CFW2ciSK0lNwbUFkOEbW4oHdkTZ0m7h7aD
+        eiJAk7agN9xJHjCYNJrSiFwHTc9SZ3+bTkBOXURuMKO9kS1m7ja4vKSUYfQ+z++XcZj1zaOOCG3g
+        J2dT6yY4LMFiNMG1KUF5i6hNnT2dFSpdzb6gfUHr9VoNSdwfI+y5agNvUtyp8/5YLx25WK8C6siU
+        4hqF256+HwH8yU+lO0m/agM3rayEH5CS4NXsstdTr6/yFT2/XAyosGj/Ciyup6PBoorPUbBZlY4q
+        DG1w+ekko6P96B8AAAD//wMAkB6kvzEEAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 85331079ee3bd029-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:43:30 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '5427'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299310'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 137ms
+      x-request-id:
+      - req_7b2f1118adbb32d32896188ca88e97da
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "You are Researcher.\nYou''re
+      an expert researcher, specialized in technology, software engineering, AI and
+      startups. You work as a freelancer and is now working on doing research and
+      analysis for a new customer.\n\nYour personal goal is: Make the best research
+      and analysis on content about AI and AI agentsTOOLS:\n------\nYou have access
+      to only the following tools:\n\n\n\nTo use a tool, please use the exact following
+      format:\n\n```\nThought: Do I need to use a tool? Yes\nAction: the tool you
+      wanna use, should be one of [], just the name.\nAction Input: Any and all relevant
+      information input and context for using the tool\nObservation: the result of
+      using the tool\n```\n\nWhen you have a response for your task, or if you do
+      not need to use a tool, you MUST use the format:\n\n```\nThought: Do I need
+      to use a tool? No\nFinal Answer: [your response here]```This is the summary
+      of your work so far:\nBegin! This is VERY important to you, your job depends
+      on it!\n\nCurrent Task: Come up with a list of 5 interesting ideas to explore
+      for an article\nThis is the context you''re working with:\nWe need to create
+      a list of 5 interesting ideas for an article. These ideas should be unique,
+      engaging, and relevant to our audience. They should be topics that our readers
+      would find interesting and would want to read more about. The ideas can be about
+      anything, but they should be something that we can write a compelling article
+      about. Please provide a brief description for each idea.\n"}], "model": "gpt-4",
+      "n": 1, "stop": ["\nObservation"], "stream": false, "temperature": 0.7}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '1624'
+      content-type:
+      - application/json
+      cookie:
+      - _cfuvid=u_fUK0MqnLcrbhMkg8kKMfrSZpALgzClvD984s71oU8-1703091698056-0-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA4RVwY4bNwy971cQc+nFMXazySbwpVi0m8ZI2wTp9tKmCGgNZ4aJRlREabyDIP9e
+        UGOvN2mAXgxjJD4+Pj6Kn88AGm6bDTRuwOzG6B89/9S+eHWr27J9+3LYdm93P735cxf5r1evf5GL
+        ZmURsvtALh+j1k7G6CmzhOXYJcJMhnrx7PzZ06dPri7O68EoLXkL62N+9OTR+dXF5SFiEHakzQb+
+        PgMA+Fx/jVto6a7ZQI2vX0ZSxZ6azf0lgCaJty8NqrJmDLlZnQ6dhEyh0r0dpPRD3sDPAlsIRC1k
+        gaIECFnE/wi/y7vwLrzggB6ug+4pbeAlJQJMBB1PBBwyJdLMoQduCdUg6C56sRuSAANgyuw8bQzr
+        Yg23A8HNJL6YRiAdXKfMHTtGD9uQyXvuKTjawO3AeowGJ8W399B5IBhYs6S5QmxX0CUZgbPCjnoO
+        gUOvwMFuSqLMDj3sJX00gnbLlZQoZMAYPTs0MrqQe4D6g0JLE3mJo901OgHoznEtWAKtoGPvqYU9
+        5wF2kgfQ4hypkt1toUP2JZFCHjBDTDJxSzChL7jzBJ5UJWiVymrqSi6J1ibV4zVcb62Cm4nS3OIM
+        v3JHG/hNNEMkiX7pQ5AMuLd/0lWMEcMMe5y1xiugT4TtXHvVJzOj/RWQkqBF9jN4nqgW/x+9W1ZX
+        VIHu0GytloOOfO5VT+RkHCm0i4wgATQnwtFUUkqT+dmEj4ladtmck+ku14sjphwHCaSrqphGcsVj
+        JsCdlAx7E+6kDYzcDxkG8W2V6XINN3mo7d2Op1Yu/dvAdVXBXM+hLCRoEj9RzbUz4gSjWSommtBT
+        yCvLdjB51ZIO+Kxajp3ExErfl4z8MhhiOEqHsJUZYwBUiIkndLORcpSCruCD7Ezp6NHRWBkYuSg2
+        qTYW5o6RtVhGq/nJYtS3rLTUCX9kTLlE/e7Q6CB7h0qgVuzRJdVGSUZW65Il5BBkwtqd6y3oARIw
+        SQltDdpL8u0atvkbexx7pJZyjBjY7J8IWuHQV0HBDeg9hb4qSDN06Ggp9BjN6Tg8B/iRMHwzGku9
+        tfNP64DggdpNmDhJMPn+9+VY3ug7SOQXtwwcYUd5TxQeYtIJcw2vgw08DBjaVfUUBhjIRygKI348
+        uIg6e8rssShLcxKplOQOz8FhAB4iozdpTJeaw/KKGfCQKSdke8wsZV0ZCok+FbY3BcFLtiRWUKlv
+        UpQ9pZqKAqV+Xpzy/aF+aM9TzV0nqb6iBjdiSzYztcDKINHX5P0MXWIKrZ/XzWHPfLlfUF76mGRn
+        yywU7++/dxxYh/eJUCXYMtIscQn/cgbwT12E5avd1phZY36f5SMFA7x8/HzBa04798Hp+fE0S0Z/
+        Ori6vDo7UGx01kzj+45DTykmrovRiJ59OfsXAAD//wMAC2+UXQ8IAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8533109ce8ac96ad-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:43:44 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=.mPG08GeMY3hdK7cnpiq43j090YU0WVLl_2dw1X7Y9Y-1707554624-1-AUEge8FOZBfiS4LUr4o0N8DEFqNqT/TcV/S/T/p+ltEYhIDDSqUb1t9zAklGiYVoMFvb7+U9V5ZWoUpiDwm/Vb4=;
+        path=/; expires=Sat, 10-Feb-24 09:13:44 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=ZyBrFHqcHcRu_Zb6u8y.XWtfBXvIY3uXznalxWZIxRk-1707554624159-0-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '13362'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299618'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 76ms
+      x-request-id:
+      - req_59c59e2b2d7b1970f00e3b0aee5ef087
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "Progressively summarize the
+      lines of conversation provided, adding onto the previous summary returning a
+      new summary.\n\nEXAMPLE\nCurrent summary:\nThe human asks what the AI thinks
+      of artificial intelligence. The AI thinks artificial intelligence is a force
+      for good.\n\nNew lines of conversation:\nHuman: Why do you think artificial
+      intelligence is a force for good?\nAI: Because artificial intelligence will
+      help humans reach their full potential.\n\nNew summary:\nThe human asks what
+      the AI thinks of artificial intelligence. The AI thinks artificial intelligence
+      is a force for good because it will help humans reach their full potential.\nEND
+      OF EXAMPLE\n\nCurrent summary:\n\n\nNew lines of conversation:\nHuman: Come
+      up with a list of 5 interesting ideas to explore for an article\nThis is the
+      context you''re working with:\nWe need to create a list of 5 interesting ideas
+      for an article. These ideas should be unique, engaging, and relevant to our
+      audience. They should be topics that our readers would find interesting and
+      would want to read more about. The ideas can be about anything, but they should
+      be something that we can write a compelling article about. Please provide a
+      brief description for each idea.\nAI: Here are five interesting ideas to explore
+      for an article:\n\n1. The Evolution of Artificial Intelligence: This article
+      could explore the history of AI, from its beginnings in theoretical work to
+      its current applications. The story of AI''s development is an exciting one,
+      filled with both successes and failures that provide valuable lessons for the
+      future.\n\n2. AI in Everyday Life: Most people are not aware of the many ways
+      AI is already integrated into our daily lives. This article could discuss examples
+      of everyday AI, from recommendations on streaming services to predictive text
+      on smartphones, and speculate about what the future might hold.\n\n3. Ethical
+      Implications of AI: As AI continues to evolve and become more prevalent, there
+      are many ethical issues that arise. This article could delve into these issues,
+      such as privacy concerns, job displacement, and potential for misuse. \n\n4.
+      The Rise of AI Startups: This article could showcase some of the most promising
+      and innovative AI startups around the world. It could discuss what these companies
+      are doing, the challenges they face, and what their success could mean for the
+      future of AI.\n\n5. AI and the Environment: This article could explore the complex
+      relationship between AI and the environment. On one hand, AI can help us make
+      more efficient use of resources and predict environmental changes. On the other
+      hand, training AI models requires a lot of computing power and energy. The article
+      could discuss these issues and the efforts being made to make AI more environmentally
+      friendly.\n\nNew summary:"}], "model": "gpt-4", "n": 1, "stream": false, "temperature":
+      0.7}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '2916'
+      content-type:
+      - application/json
+      cookie:
+      - _cfuvid=ZyBrFHqcHcRu_Zb6u8y.XWtfBXvIY3uXznalxWZIxRk-1707554624159-0-604800000;
+        __cf_bm=.mPG08GeMY3hdK7cnpiq43j090YU0WVLl_2dw1X7Y9Y-1707554624-1-AUEge8FOZBfiS4LUr4o0N8DEFqNqT/TcV/S/T/p+ltEYhIDDSqUb1t9zAklGiYVoMFvb7+U9V5ZWoUpiDwm/Vb4=
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1SSQW/bMAyF7/kVhM5pkTZpMuTWwwb0MGwYimHFMBSKTNtsZVIV6XRB0f8+SE4a
+        7GLAfHqfnki+zQAcNW4LLvTewpDixaeX5svDr+86XH97GlcPh58/Fn79fP/10Dz5jZsXh+yeMNjJ
+        dRlkSBGNhCc5ZPSGhXq1WWxublbr61UVBmkwFluX7GJ1sVhfLY+OXiigui38ngEAvNVvycYN/nVb
+        WMxPlQFVfYdu+3EIwGWJpeK8Kql5Njc/i0HYkGvc+x6hHwfP4PVZwXqE2zswgSADwpjglayHlvYI
+        I9PLiHNA7nxH3M3BcwMZI+49G1CDXqGVDAWWjULES7ifgDp2HaopmCQKCsL1KtxLHEubKgr3mA+N
+        P8CoCNJWSEuBfARiwxipQw4lgfUUSnVIkYIvAC2G27t5xWaaAOVi89nGpFPYKmKcHD0l2KG9InI5
+        edKR95SFB2S7hM8+9KfwJWbpik498bDLhC00qCFTqrKMFomJu0rSIKnmKD9JSsvLW069cceBvH9M
+        MkqXsuzK1HmM8aPeEpP2jxm9CpepqUma7O8zgD91Y8b/lsClLEOyR5Nn5AK8WS4nnjsv51ndHNfJ
+        mZiP5/p6sZwdEzo9qOHw2BJ3mFOmukAl5+x99g8AAP//AwBw1HLENwMAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 853310f1aaae96ad-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:43:48 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '3933'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299289'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 142ms
+      x-request-id:
+      - req_8f08c85f64aaea3c989348b8d22a2ce4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "You are Crew Manager.\nYou are
+      a seasoned manager with a knack for getting the best out of your team.\nYou
+      are also known for your ability to delegate work to the right people, and to
+      ask the right questions to get the best out of your team.\nEven though you don''t
+      perform tasks by yourself, you have a lot of experience in the field, which
+      allows you to properly evaluate the work of your team members.\n\nYour personal
+      goal is: Manage the team to complete the task in the best way possible.TOOLS:\n------\nYou
+      have access to only the following tools:\n\nDelegate work to co-worker: Delegate
+      work to co-worker(coworker: str, task: str, context: str) - Delegate a specific
+      task to one of the following co-workers: Researcher, Senior Writer. The input
+      to this tool should be the role of the coworker, the task you want them to do,
+      and ALL necessary context to exectue the task, they know nothing about the task,
+      so share absolute everything you know, don''t reference things but instead explain
+      them.\nAsk question to co-worker: Ask question to co-worker(coworker: str, question:
+      str, context: str) - Ask a specific question to one of the following co-workers:
+      Researcher, Senior Writer. The input to this tool should be the role of the
+      coworker, the question you have for them, and ALL necessary context to ask the
+      question properly, they know nothing about the question, so share absolute everything
+      you know, don''t reference things but instead explain them.\n\nTo use a tool,
+      please use the exact following format:\n\n```\nThought: Do I need to use a tool?
+      Yes\nAction: the tool you wanna use, should be one of [Delegate work to co-worker,
+      Ask question to co-worker], just the name.\nAction Input: Any and all relevant
+      information input and context for using the tool\nObservation: the result of
+      using the tool\n```\n\nWhen you have a response for your task, or if you do
+      not need to use a tool, you MUST use the format:\n\n```\nThought: Do I need
+      to use a tool? No\nFinal Answer: [your response here]```This is the summary
+      of your work so far:\nBegin! This is VERY important to you, your job depends
+      on it!\n\nCurrent Task: Come up with a list of 5 interesting ideas to explore
+      for an article, then write one amazing paragraph highlight for each idea that
+      showcases how good an article about this topic could be. Return the list of
+      ideas with their paragraph and your notes.\nThought: Do I need to use a tool?
+      Yes\nAction: Delegate work to co-worker\nAction Input: coworker: Researcher,
+      task: Come up with a list of 5 interesting ideas to explore for an article,
+      context: We need to create a list of 5 interesting ideas for an article. These
+      ideas should be unique, engaging, and relevant to our audience. They should
+      be topics that our readers would find interesting and would want to read more
+      about. The ideas can be about anything, but they should be something that we
+      can write a compelling article about. Please provide a brief description for
+      each idea. \nObservation: Here are five interesting ideas to explore for an
+      article:\n\n1. The Evolution of Artificial Intelligence: This article could
+      explore the history of AI, from its beginnings in theoretical work to its current
+      applications. The story of AI''s development is an exciting one, filled with
+      both successes and failures that provide valuable lessons for the future.\n\n2.
+      AI in Everyday Life: Most people are not aware of the many ways AI is already
+      integrated into our daily lives. This article could discuss examples of everyday
+      AI, from recommendations on streaming services to predictive text on smartphones,
+      and speculate about what the future might hold.\n\n3. Ethical Implications of
+      AI: As AI continues to evolve and become more prevalent, there are many ethical
+      issues that arise. This article could delve into these issues, such as privacy
+      concerns, job displacement, and potential for misuse. \n\n4. The Rise of AI
+      Startups: This article could showcase some of the most promising and innovative
+      AI startups around the world. It could discuss what these companies are doing,
+      the challenges they face, and what their success could mean for the future of
+      AI.\n\n5. AI and the Environment: This article could explore the complex relationship
+      between AI and the environment. On one hand, AI can help us make more efficient
+      use of resources and predict environmental changes. On the other hand, training
+      AI models requires a lot of computing power and energy. The article could discuss
+      these issues and the efforts being made to make AI more environmentally friendly.\nThought:
+      "}], "model": "gpt-4", "n": 1, "stop": ["\nObservation"], "stream": false, "temperature":
+      0.0}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '4690'
+      content-type:
+      - application/json
+      cookie:
+      - __cf_bm=EBAvl3g_XqkWdcmiw8Ml6O7WPWo5VXs8r3SwmJVLUZw-1707554605-1-AUZKfV35H8Wp5ossrlc6jtZ9dhgqLrVrl+ZF0jOXXdI0dpVcIvTttF7f8Pl5ZI2Pih3rfueXBSRF9vmqggAOPCk=;
+        _cfuvid=pTnBIy95g3oEDKgA4dLOO3E_dCa6hkilxXzbh8LPWMM-1707554605073-0-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1RTwW7bSgy8+ysGOitG3MRJq0sRtClgoHiHpu+lRVsE9IqS2KyWeruUnbTIvxcr
+        23F6EbQzy+GQS/6eAYXURYXCdWSuH/zJ6//rD65+J/9e//OOL6Rfh4ev4/DlJizqh/+KMkfo+ic7
+        O0TNnfaDZxMNO9pFJuOsurg8vVwuzy9evZ6IXmv2Oawd7OT85PRicbaP6FQcp6LCtxkA/J6+2Vuo
+        +aGocFoekJ5TopaL6vkSUET1GSkoJUlGwYrySDoNxmGy+16xQmCuYYoxMQim6t/iK6fv4crlGiq8
+        Z88tGWOr8T7fdHqSfzke7mAVhtEqON3hFW44iEbcRjGOJYzSfbU7QQODevolocVAkdpIQ4dO2s5L
+        2xkajWByHaRmgnVkSJ1uHSVO6HSLVrUGBVA0cZ5Bax0N1kmC6SAOTkdfY80lplofrMIto6NNLtBL
+        MmiDJSQYR06WjeRcaUp9FJ7jc8eJ9xxFrrCYMFxv1I9T4drgKpo04oQ8VsHYe2k5OC7xao6rFSTg
+        esPxsaZHfJSGS5zNcW2duBzQD14cZak0aa1KnO9yfJLEOwg3RtHGIZVYTpIUali2ETYSNfQcbI4P
+        h7Zpk8mD7xJb3j0xIQ9m9vdX46cGP3c/TcKD5gnJFWnzstMaXrQ525T0Qil1+76DQ0uthLaEhEZj
+        TyYbLiff+0s93fOUKjLVHLGlYHm08nHCm9H740MU+/F9ep57r+0QdZ13JIzeP+ONBEndXWRKGvKM
+        J9NhF/40A35M+zX+tTLFELUf7M70nkMWfLO83OkVx1U+sovlxZ41NfIviMXibLb3WKTHZNzfNRJa
+        jkOUaeGy09nT7A8AAAD//wMAF5OKNmcEAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8533110b9a2417ea-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:43:55 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '6749'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '298855'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 229ms
+      x-request-id:
+      - req_06d2fb84bf34ebae70ce35d99f30b0a3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "Return a valid schema for the
+      one tool you must use with its arguments and values.\n\nTools available:\n\nFuntion
+      Name: Delegate work to co-worker\nFuntion attributes: {''coworker'': {''type'':
+      ''string''}, ''task'': {''type'': ''string''}, ''context'': {''type'': ''string''}}\nDescription:
+      Delegate work to co-worker(coworker: str, task: str, context: str) - Delegate
+      a specific task to one of the following co-workers: Researcher, Senior Writer.
+      The input to this tool should be the role of the coworker, the task you want
+      them to do, and ALL necessary context to exectue the task, they know nothing
+      about the task, so share absolute everything you know, don''t reference things
+      but instead explain them.\n--\nFuntion Name: Ask question to co-worker\nFuntion
+      attributes: {''coworker'': {''type'': ''string''}, ''question'': {''type'':
+      ''string''}, ''context'': {''type'': ''string''}}\nDescription: Ask question
+      to co-worker(coworker: str, question: str, context: str) - Ask a specific question
+      to one of the following co-workers: Researcher, Senior Writer. The input to
+      this tool should be the role of the coworker, the question you have for them,
+      and ALL necessary context to ask the question properly, they know nothing about
+      the question, so share absolute everything you know, don''t reference things
+      but instead explain them.\n\nUse this text to inform a valid ouput schema:\nDo
+      I need to use a tool? Yes\nAction: Delegate work to co-worker\nAction Input:
+      coworker: Senior Writer, task: Write one amazing paragraph highlight for each
+      idea that showcases how good an article about this topic could be, context:
+      We have a list of 5 interesting ideas for an article. These ideas are: 1. The
+      Evolution of Artificial Intelligence, 2. AI in Everyday Life, 3. Ethical Implications
+      of AI, 4. The Rise of AI Startups, 5. AI and the Environment. For each of these
+      ideas, we need a compelling paragraph that highlights the potential of an article
+      on this topic. This paragraph should be engaging, informative, and should make
+      the reader want to read the full article. \n\nThe output should be formatted
+      as a JSON instance that conforms to the JSON schema below.\n\nAs an example,
+      for the schema {\"properties\": {\"foo\": {\"title\": \"Foo\", \"description\":
+      \"a list of strings\", \"type\": \"array\", \"items\": {\"type\": \"string\"}}},
+      \"required\": [\"foo\"]}\nthe object {\"foo\": [\"bar\", \"baz\"]} is a well-formatted
+      instance of the schema. The object {\"properties\": {\"foo\": [\"bar\", \"baz\"]}}
+      is not well-formatted.\n\nHere is the output schema:\n```\n{\"properties\":
+      {\"function_name\": {\"title\": \"Function Name\", \"description\": \"The name
+      of the function to be called.\", \"type\": \"string\"}, \"arguments\": {\"title\":
+      \"Arguments\", \"description\": \"A dictinary of arguments to be passed to the
+      function.\", \"type\": \"object\"}}, \"required\": [\"function_name\", \"arguments\"]}\n```\n```"}],
+      "model": "gpt-4", "n": 1, "stream": false, "temperature": 0.0}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '2994'
+      content-type:
+      - application/json
+      cookie:
+      - __cf_bm=EBAvl3g_XqkWdcmiw8Ml6O7WPWo5VXs8r3SwmJVLUZw-1707554605-1-AUZKfV35H8Wp5ossrlc6jtZ9dhgqLrVrl+ZF0jOXXdI0dpVcIvTttF7f8Pl5ZI2Pih3rfueXBSRF9vmqggAOPCk=;
+        _cfuvid=pTnBIy95g3oEDKgA4dLOO3E_dCa6hkilxXzbh8LPWMM-1707554605073-0-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1RU227bRhB911cM9pkSfJNt6C1AncZtn+oASVsW9mg55E603GF3h1IcQ/9e7FIX
+        54UQ58w5czQXvs0ADDdmBcY6VNsPfn7/X/Px22/yeLXb/f7311+/JPSbz5++7v5KT8imygxZfyOr
+        R9bCSj94UpYwwTYSKmXVy7uLu+Xy5vZ6WYBeGvKZ1g06v5lf3F5eHxhO2FIyK/hnBgDwVp7ZW2jo
+        u1nBRXWM9JQSdmRWpyQAE8XniMGUOCkGNdUZtBKUQrH7iSIBJ0DYkffzVmKPqtQAh0yzBNKCOoJk
+        HfUIa0zUgIQSG6JsuSnJE5ElrOpQh5eXlzq81QGgNu0YbAaeA/ZUmxXU5hfy1KES7CRuQAWszPNP
+        irWpJhbGbuwpaMqMopSjVo5pWeaJAkuEL5H1xMxZimkzZRQIJBBgjz84dDBgxC7i4MBx5zx3TqGV
+        CITWATeEoA4VkpOdxUQJnOygE2kAA2BUtp4A1zIqqOMEKgNbsDL6Btb0zkTp8Xc9+CBwuCVA8Jw0
+        t3QJHJQiJc2ucuFUfJyrLOCzo0QHDCOt4LLE4GErfswtzUIfonLLltHDY1DynjsKliq4WsCHR+AA
+        D1uKrw2+wh/cUgXXC3hQxzYT+sGzLWNLReuxgpupxp+caArBk2LUcUgVLIskhqZM/yFsOUrIU1rA
+        x2MPp3U5+q5gRxCIGkDIR5H9/TSF0u3TKNK0VpK3M/8jad+3vWzdsefZJqd3SskdhgAUOuw4dNV5
+        L7dUFd+HpB43VEpFwoYi7DBo3sP8WuLt6P1pELXJQ93XYV822xwOaX+6QC/dEGWdrzWM3p/iLQdO
+        7jkSJgn52pLKMNH3M4B/y6WPPx2vGaL0gz6rbChkwdu7q0nPnD8qZ/Ty/uaAqij6M3C/vJ0dLJr0
+        mpT655ZDR3GIXC4/G53tZ/8DAAD//wMA71AiSfAEAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 85331136cf6517ea-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:44:03 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '8047'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299286'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 142ms
+      x-request-id:
+      - req_a1e7e4c3a5b07c904bde939c482128ff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "You are Senior Writer.\nYou''re
+      a senior writer, specialized in technology, software engineering, AI and startups.
+      You work as a freelancer and are now working on writing content for a new customer.\n\nYour
+      personal goal is: Write the best content about AI and AI agents.TOOLS:\n------\nYou
+      have access to only the following tools:\n\n\n\nTo use a tool, please use the
+      exact following format:\n\n```\nThought: Do I need to use a tool? Yes\nAction:
+      the tool you wanna use, should be one of [], just the name.\nAction Input: Any
+      and all relevant information input and context for using the tool\nObservation:
+      the result of using the tool\n```\n\nWhen you have a response for your task,
+      or if you do not need to use a tool, you MUST use the format:\n\n```\nThought:
+      Do I need to use a tool? No\nFinal Answer: [your response here]```This is the
+      summary of your work so far:\nBegin! This is VERY important to you, your job
+      depends on it!\n\nCurrent Task: Write one amazing paragraph highlight for each
+      idea that showcases how good an article about this topic could be\nThis is the
+      context you''re working with:\nWe have a list of 5 interesting ideas for an
+      article. These ideas are: 1. The Evolution of Artificial Intelligence, 2. AI
+      in Everyday Life, 3. Ethical Implications of AI, 4. The Rise of AI Startups,
+      5. AI and the Environment. For each of these ideas, we need a compelling paragraph
+      that highlights the potential of an article on this topic. This paragraph should
+      be engaging, informative, and should make the reader want to read the full article.\n"}],
+      "model": "gpt-4", "n": 1, "stop": ["\nObservation"], "stream": false, "temperature":
+      0.7}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '1690'
+      content-type:
+      - application/json
+      cookie:
+      - _cfuvid=qVpxYVGQ_iwAkrQrePYbf52GMURpsQ__qprXXMk79wI-1703091772665-0-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA3xWTW8bRwy9+1cQOstCUttJoUvhIg7goijQb6B1EXBnqV3Gs+RmhrOKXOS/F5yV
+        tE4C9CIIO0PO4+N7nPn3AmDF7WoLq9CjhWGMl99+aN+mu/dB77i//f5V/3339PTWfv6h/+v+z3a1
+        9ght3lOwU9Qm6DBGMlaZl0MiNPKsL1+/eH1zc/3q+qouDNpS9LButMvryxevXl4dI3rlQHm1hb8v
+        AAD+rb+OTVr6uNrCi/Xpy0A5Y0er7XkTwCpp9C8rzJmzodhqvSwGFSOpcH/rtXS9beGNwj0IUQum
+        UDIBgqnG7+AnfZAHecuCEW4l7yltwb+83MBvPcHdpLF4paA7uE3GOw6MEe7FKEbuSAJtH+QNTwQt
+        0QgspmA9wQ5zYEFj6eC9liR08By45OBnOdawSzoAW4a+DE0kaKhjEZYuA2ZACCqBRgMWyIE9BnYc
+        KjRTQKnpuoQRRkzmR2lJ0CLHA0SeKANK63nQMB5y3eH9SR4pOqGnyhu4+zhGTQS97uH2HnrMQJPG
+        iVrQiVKt7UCY8rr+faQDDBwpmwplsB4NepwIco8jtbWiLune+nUF4DETZ1bB5JHSZmio53nJG9NO
+        KIEGEssb+F3C+dREA6ZHdHIsoeSdpgHPvbmv6f04zKZFWid+VFeCk73TOcmuWEm08RZ/s/EoFrib
+        KB1aPMCPvPNuPj+0SCYS4GHEYMeDWCq35GHgcZXfYwt9JQ+YbOwrI46q14EAxzGyl5a9YVmrBgZq
+        Gec9hNH6gIk28CNhEsBGi1UQuTQWnXaDMenOq4M9HvKpQQ2FegJkjiRWFSCUHOhhUUHSYiy0BpIe
+        JTg/QWUi4VmBY9K2BOOJ7TA3q6VQW3U54CNLt4jDQUkZKGnJc2Fh1s+RocRdb4A2H79j6SgZjyc2
+        9sA2CyRXvly6CcOcYc/Wg1HoRaN2h7Nq9ppiC5hq9SXXFl5t4M56Du7I4UsU2wf5g8TbvbiSjrsj
+        NofEYv3/enLfUw0+2QMGIsuQKI8qmRuObIfPWeGvYIAKjIknDIc1vNcGMoWSzhy7EMgwgmga8mKS
+        Qd3L2kTujtn2NDvLdI+pzVXrLU0UdXS31MiSaQNvKE7ParZ5CF6OSSf1PkJLDZprsyrs9n6mJS9n
+        E+aSyIXl2w0fqU4ZklzZfM5BpBpGHwpb9aZD8N5czxP0F850JOJXw2RlzNsH+ZNNKOfZ18uOfNwx
+        zxahPYQeh/FE5tKJNbSJpwrOK1zUkug0sTfwhvNsZFfcPF0sIccm4tOs/mFEYSfCBx4mh3TKOeqe
+        0hFW9atzOt98H90qTSRv13z3Vag+nciOLVxw8JP3oi3ZElP+ytycoAh/KOSlxkjS0Vw+Jx+cRdom
+        UbWfY6gZn6lkGXDW0wF6jW0ddYncXqda5qHnxXzhq6Zk9qJrw242pynqMXcycVJxZW0f5DOJu1sz
+        hS9Gb7XXEnRyz7MTZ/fkkg1Z8OSe07Q9Xjh8Ul3J820ddGjQIEQenOnQo3S09tGVKU0EDWvLE6V8
+        tpSOxoPTnihrSYGgGEd+wlkWX07Xk6omOg/Vr0HMbcYFfTzTeip+6d8RxajJirC5wthHN+V6q62O
+        b5VP50dO1M4l5Q8iKTGev+9YOPfvEmFW8QdNNh3n8E8XAP/Ux1T57H20GpMOo70zfSTxhFc313O+
+        1fJuW1avX1wdV00N47Lw+ub1xRHiKh+y0fBunuOjz80j0ItPF/8BAAD//wMAyXzRJ1MKAAA=
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8533116a387396d7-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:44:21 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=HK6aONrGD31TZ4sld6V4bsDg5W4i5xEdjmgL3Yr8XgU-1707554661-1-AU/qKM2c4KwrzgUveUchtPBFJMTuW88dICuFHKLK3WemxS4xwoIPUFqDA8FibWRTvpukyeNGBj/up79fNMI5U2A=;
+        path=/; expires=Sat, 10-Feb-24 09:14:21 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=SRoFRQPZDNTyo98s9j9bLplJ5tOFCJXVyBNCTAlJt5Q-1707554661709-0-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '18067'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299600'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 79ms
+      x-request-id:
+      - req_3b533eecec4a6c44aa6e015c1ad70c30
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "Progressively summarize the
+      lines of conversation provided, adding onto the previous summary returning a
+      new summary.\n\nEXAMPLE\nCurrent summary:\nThe human asks what the AI thinks
+      of artificial intelligence. The AI thinks artificial intelligence is a force
+      for good.\n\nNew lines of conversation:\nHuman: Why do you think artificial
+      intelligence is a force for good?\nAI: Because artificial intelligence will
+      help humans reach their full potential.\n\nNew summary:\nThe human asks what
+      the AI thinks of artificial intelligence. The AI thinks artificial intelligence
+      is a force for good because it will help humans reach their full potential.\nEND
+      OF EXAMPLE\n\nCurrent summary:\n\n\nNew lines of conversation:\nHuman: Write
+      one amazing paragraph highlight for each idea that showcases how good an article
+      about this topic could be\nThis is the context you''re working with:\nWe have
+      a list of 5 interesting ideas for an article. These ideas are: 1. The Evolution
+      of Artificial Intelligence, 2. AI in Everyday Life, 3. Ethical Implications
+      of AI, 4. The Rise of AI Startups, 5. AI and the Environment. For each of these
+      ideas, we need a compelling paragraph that highlights the potential of an article
+      on this topic. This paragraph should be engaging, informative, and should make
+      the reader want to read the full article.\nAI: 1. The Evolution of Artificial
+      Intelligence:\nDive deep into the fascinating journey of artificial intelligence,
+      from its humble beginnings as a concept in science fiction to an integral part
+      of our daily lives and a catalyst of modern innovations. Explore how AI has
+      evolved over the years, the key milestones that have shaped its growth, and
+      the visionary minds behind these advancements. Uncover the remarkable transformation
+      of AI and its astounding potential for the future.\n\n2. AI in Everyday Life:\nUncover
+      the unseen impact of AI in our every day lives, from our smartphones and home
+      appliances to social media and healthcare. Learn about the subtle yet profound
+      ways AI has become a silent partner in your daily routine, enhancing convenience,
+      productivity, and decision-making. Explore the numerous applications of AI right
+      at your fingertips and how it shapes our interactions with technology and the
+      world around us.\n\n3. Ethical Implications of AI:\nVenture into the ethical
+      labyrinth of artificial intelligence, where innovation meets responsibility.
+      Explore the implications of AI on privacy, job security, and societal norms,
+      and the moral obligations we have towards its development and use. Delve into
+      the thought-provoking debates about AI ethics and the measures being taken to
+      ensure its responsible and equitable use.\n\n4. The Rise of AI Startups:\nWitness
+      the rise of AI startups, the new champions of innovation, driving the technology
+      revolution. Discover how these trailblazing companies are harnessing the power
+      of AI to solve complex problems, create new markets, and revolutionize industries.
+      Learn about their unique challenges, their groundbreaking solutions, and the
+      potential they hold for reshaping the future of technology and business.\n\n5.
+      AI and the Environment:\nExplore the intersection of AI and the environment,
+      where technology meets sustainability. Uncover how AI is being used to combat
+      climate change, conserve biodiversity, and optimize resource utilization. Learn
+      about the innovative ways AI is being used to create a sustainable future and
+      the challenges and opportunities it presents.\n\nNew summary:"}], "model": "gpt-4",
+      "n": 1, "stream": false, "temperature": 0.7}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '3594'
+      content-type:
+      - application/json
+      cookie:
+      - _cfuvid=SRoFRQPZDNTyo98s9j9bLplJ5tOFCJXVyBNCTAlJt5Q-1707554661709-0-604800000;
+        __cf_bm=HK6aONrGD31TZ4sld6V4bsDg5W4i5xEdjmgL3Yr8XgU-1707554661-1-AU/qKM2c4KwrzgUveUchtPBFJMTuW88dICuFHKLK3WemxS4xwoIPUFqDA8FibWRTvpukyeNGBj/up79fNMI5U2A=
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1RTy27bMBC8+ysWPMuBjfqR+OaDUxjNqQ+gSFEEDLWitqV2WXLtRAjy7wXlh5CL
+        CO5wZ2fI0dsEwFBtNmBca9V1MUxv/9Wf7+5fH3/0L/2Xn4tHd0sznj+8NPm4taYqHfL8B51eum6c
+        dDGgkvAJdgmtYmGdr2fr5XKxWs0HoJMaQ2nzUaeL6Ww1/3TuaIUcZrOBXxMAgLfhW7Rxja9mA7Pq
+        UukwZ+vRbK6HAEySUCrG5kxZLaupRtAJK/Ig93uLsN2DR8ZUJAKyt57Yg+Uaig8MoWyjTdYnG9sM
+        KtCSbwP5ViFKoSIbwCYlFzCDMDR0RFCJ5PIGyozdUcKhXAhIA9uk1JArTXvWMsAjO6yKEmLYHTH1
+        te3hgRqsYKctuXK0i4GcLSR5YNlXA/VXynjawze1SQ8xV4P67X5YtIznIyXhDllvYGddO/qBmORI
+        NWawDMWKK3Z9oC5mBGKVgSFhjuh09FVBk6QbMJ/kRdthGHETDsXMRSFphtpS6MHGUX8FeHblhDPV
+        5fJP9cJHXbROz57yB0+DFAkXw1QkX63ZAPmQ1RLbZwqk/Y05P/r7NS1BfEzyXJLFhxCu9YaYcvuU
+        0GbhkoysEk/t7xOA30MqDx+CZmKSLuqTyl/kQrha3p34zPgDjOjt+gyqqA1jfb1YTc4KTe6zYvfU
+        EHtMMdEQ0qJz8j75DwAA//8DAGza8PubAwAA
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 853311dbdf9a96d7-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:44:26 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '4205'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299120'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 175ms
+      x-request-id:
+      - req_2d88d7714db678d617280e78883f5b47
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "You are Crew Manager.\nYou are
+      a seasoned manager with a knack for getting the best out of your team.\nYou
+      are also known for your ability to delegate work to the right people, and to
+      ask the right questions to get the best out of your team.\nEven though you don''t
+      perform tasks by yourself, you have a lot of experience in the field, which
+      allows you to properly evaluate the work of your team members.\n\nYour personal
+      goal is: Manage the team to complete the task in the best way possible.TOOLS:\n------\nYou
+      have access to only the following tools:\n\nDelegate work to co-worker: Delegate
+      work to co-worker(coworker: str, task: str, context: str) - Delegate a specific
+      task to one of the following co-workers: Researcher, Senior Writer. The input
+      to this tool should be the role of the coworker, the task you want them to do,
+      and ALL necessary context to exectue the task, they know nothing about the task,
+      so share absolute everything you know, don''t reference things but instead explain
+      them.\nAsk question to co-worker: Ask question to co-worker(coworker: str, question:
+      str, context: str) - Ask a specific question to one of the following co-workers:
+      Researcher, Senior Writer. The input to this tool should be the role of the
+      coworker, the question you have for them, and ALL necessary context to ask the
+      question properly, they know nothing about the question, so share absolute everything
+      you know, don''t reference things but instead explain them.\n\nTo use a tool,
+      please use the exact following format:\n\n```\nThought: Do I need to use a tool?
+      Yes\nAction: the tool you wanna use, should be one of [Delegate work to co-worker,
+      Ask question to co-worker], just the name.\nAction Input: Any and all relevant
+      information input and context for using the tool\nObservation: the result of
+      using the tool\n```\n\nWhen you have a response for your task, or if you do
+      not need to use a tool, you MUST use the format:\n\n```\nThought: Do I need
+      to use a tool? No\nFinal Answer: [your response here]```This is the summary
+      of your work so far:\nBegin! This is VERY important to you, your job depends
+      on it!\n\nCurrent Task: Come up with a list of 5 interesting ideas to explore
+      for an article, then write one amazing paragraph highlight for each idea that
+      showcases how good an article about this topic could be. Return the list of
+      ideas with their paragraph and your notes.\nThought: Do I need to use a tool?
+      Yes\nAction: Delegate work to co-worker\nAction Input: coworker: Researcher,
+      task: Come up with a list of 5 interesting ideas to explore for an article,
+      context: We need to create a list of 5 interesting ideas for an article. These
+      ideas should be unique, engaging, and relevant to our audience. They should
+      be topics that our readers would find interesting and would want to read more
+      about. The ideas can be about anything, but they should be something that we
+      can write a compelling article about. Please provide a brief description for
+      each idea. \nObservation: Here are five interesting ideas to explore for an
+      article:\n\n1. The Evolution of Artificial Intelligence: This article could
+      explore the history of AI, from its beginnings in theoretical work to its current
+      applications. The story of AI''s development is an exciting one, filled with
+      both successes and failures that provide valuable lessons for the future.\n\n2.
+      AI in Everyday Life: Most people are not aware of the many ways AI is already
+      integrated into our daily lives. This article could discuss examples of everyday
+      AI, from recommendations on streaming services to predictive text on smartphones,
+      and speculate about what the future might hold.\n\n3. Ethical Implications of
+      AI: As AI continues to evolve and become more prevalent, there are many ethical
+      issues that arise. This article could delve into these issues, such as privacy
+      concerns, job displacement, and potential for misuse. \n\n4. The Rise of AI
+      Startups: This article could showcase some of the most promising and innovative
+      AI startups around the world. It could discuss what these companies are doing,
+      the challenges they face, and what their success could mean for the future of
+      AI.\n\n5. AI and the Environment: This article could explore the complex relationship
+      between AI and the environment. On one hand, AI can help us make more efficient
+      use of resources and predict environmental changes. On the other hand, training
+      AI models requires a lot of computing power and energy. The article could discuss
+      these issues and the efforts being made to make AI more environmentally friendly.\nThought:
+      Do I need to use a tool? Yes\nAction: Delegate work to co-worker\nAction Input:
+      coworker: Senior Writer, task: Write one amazing paragraph highlight for each
+      idea that showcases how good an article about this topic could be, context:
+      We have a list of 5 interesting ideas for an article. These ideas are: 1. The
+      Evolution of Artificial Intelligence, 2. AI in Everyday Life, 3. Ethical Implications
+      of AI, 4. The Rise of AI Startups, 5. AI and the Environment. For each of these
+      ideas, we need a compelling paragraph that highlights the potential of an article
+      on this topic. This paragraph should be engaging, informative, and should make
+      the reader want to read the full article. \nObservation: 1. The Evolution of
+      Artificial Intelligence:\nDive deep into the fascinating journey of artificial
+      intelligence, from its humble beginnings as a concept in science fiction to
+      an integral part of our daily lives and a catalyst of modern innovations. Explore
+      how AI has evolved over the years, the key milestones that have shaped its growth,
+      and the visionary minds behind these advancements. Uncover the remarkable transformation
+      of AI and its astounding potential for the future.\n\n2. AI in Everyday Life:\nUncover
+      the unseen impact of AI in our every day lives, from our smartphones and home
+      appliances to social media and healthcare. Learn about the subtle yet profound
+      ways AI has become a silent partner in your daily routine, enhancing convenience,
+      productivity, and decision-making. Explore the numerous applications of AI right
+      at your fingertips and how it shapes our interactions with technology and the
+      world around us.\n\n3. Ethical Implications of AI:\nVenture into the ethical
+      labyrinth of artificial intelligence, where innovation meets responsibility.
+      Explore the implications of AI on privacy, job security, and societal norms,
+      and the moral obligations we have towards its development and use. Delve into
+      the thought-provoking debates about AI ethics and the measures being taken to
+      ensure its responsible and equitable use.\n\n4. The Rise of AI Startups:\nWitness
+      the rise of AI startups, the new champions of innovation, driving the technology
+      revolution. Discover how these trailblazing companies are harnessing the power
+      of AI to solve complex problems, create new markets, and revolutionize industries.
+      Learn about their unique challenges, their groundbreaking solutions, and the
+      potential they hold for reshaping the future of technology and business.\n\n5.
+      AI and the Environment:\nExplore the intersection of AI and the environment,
+      where technology meets sustainability. Uncover how AI is being used to combat
+      climate change, conserve biodiversity, and optimize resource utilization. Learn
+      about the innovative ways AI is being used to create a sustainable future and
+      the challenges and opportunities it presents.\nThought: "}], "model": "gpt-4",
+      "n": 1, "stop": ["\nObservation"], "stream": false, "temperature": 0.0}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '7537'
+      content-type:
+      - application/json
+      cookie:
+      - __cf_bm=EBAvl3g_XqkWdcmiw8Ml6O7WPWo5VXs8r3SwmJVLUZw-1707554605-1-AUZKfV35H8Wp5ossrlc6jtZ9dhgqLrVrl+ZF0jOXXdI0dpVcIvTttF7f8Pl5ZI2Pih3rfueXBSRF9vmqggAOPCk=;
+        _cfuvid=pTnBIy95g3oEDKgA4dLOO3E_dCa6hkilxXzbh8LPWMM-1707554605073-0-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA3xWUW/cyA1+968g9nm9iHOJr7cvRQD7LgYOLdC7awvURUCNuBLjEUcZcrSRD/nv
+        BUe7KycB+mIYO0Py48fvo+bPK4ANt5s9bEKPFoYxXv/lU/vL/e+3P8/z83sNxH//6beHX96X93f8
+        rP/ebD0iNR8p2DlqF9IwRjJOshyHTGjkWW9+fPXj27dvbm9v68GQWooe1o12/eb61e3ND6eIPnEg
+        3ezhP1cAAH/Wv45NWvq82cOr7fmXgVSxo83+cglgk1P0XzaoymoottmuhyGJkVS4dwkeQIhasARF
+        CRAspfhX+Ft6lJ9ZMMI70SPlPbynTICZwHqCA08ELEaZ1Fg64JZQ4ZAyoABm4xAJjmw9IPTc9ZG7
+        3mDEjF3Gsa83CUO/f5RHudnB7z3B/ZRicdYgHeBdNj5wYIzwIEYxckcSaP8od167JRodQFrgoAYW
+        rEg+ppKFZs+Baw5+kWMLh5wGYFPoy9BEgoY6FmHpFFABISQJNBqwgAb2GDhwqNAseYeerssYvSPz
+        UqlkaJHjDJEnUkBpPQ8axlnrDZ919khJE3oq3cH95zGmTNCnI7x7gB4VaEpxohbSRLn2NhNm3dZ/
+        n2iGgSOpJSEF69Ggx4lAexyprR11OR2t31YAHjOxchLMHimtQkM9L0c+7XZCCTSQmO7gDwmXqpkG
+        zE/o5FhG0UPKA15m81DTezlUS0VaJ35Mrion24dbx1KsZNr5iF/vPIoF7ifKc4sz/MoHn+bLokWU
+        SICHEYOdCrFUbsnDwOMqv6cR+okOmG3sKyOOqk8DAY5jZG9NfWCaqgYGahmXO4TR+oCZdvArYRbA
+        JhWrILQ0Fp12gzGng3cHR5z1PKCGQq0AypGkatqEsgOdVxXkVIyFtkDSowTnJySZSHhR4JhTW4Lx
+        xDYvw2op1FFdD/jE0q3icFBSBsqp6NJYWPRzYihXa6Et5Q8sHWXj8czGEdgWgWjlq7oWw5KhOtQo
+        9JJi6uaLao4pxxYw1+6L1hH+sIN76zm4I4dvUewf5Z8kPu7VlXS6HbGZM4v1/9eTx55q8NkeMBCZ
+        QiYdkyg3HNnmr1nh72BAEhgzTxjmLXxMDSiFki8cuxDIMIKkPOhqkiG5l1MTuTtlO9LiLEtHzK1W
+        rbc0UUyju6VGFqUd3FGcXvRsfSpdb9djTlPyOUJLDZprsyrs3cNCi661CbVkcmH5dcMnqluGRCub
+        LzmIVMPoU2Gr3nQIPps3ywb9ByudiPjNMFsZdf8o/2ITUl18vd7Q041ltwgdIfQ4jGcy10lsoc08
+        VXDe4aqWTOeNvYM71sXIrrhlu1hGjk3E50X9w4jCToQvPMwO6ZxzTEfKJ1jVr87p8hX97FZpIvm4
+        lu9oherbiew0whUHP/ss2qKWmfQ7c3OGIvypkLcaI0lHS/ucfXEWaZtM1X6OoWZ8oZJ1wVlPM/Qp
+        tnXVZXJ7nXtZlp43842vmqLsTdeBvd2dt6jH3MvEOYkra/8oX0nc3aoUvlm91V5r0Nk9Lyou7tGi
+        hix4ds95254+OHxWXdHlCRDS0KBBiDw406FH6Wjrq0spTwQNp5YnynqxVBqNB6c9k6aSA0ExjvyM
+        iyy+3a5nVU10Warfg1jGjCv6eKH13Pw6vxOKMWUrwuYKY1/dpPWrtjm9e75cHkwxdS4pf1xJifHy
+        +4GFtf+QCTWJP47U0riEf7kC+G99mJWv3lqbMadhtA+Wnkg84c3bV7dLws36CFyP39ycTy0Zxhdx
+        P71+fXUCudFZjYYPyyYffXOeoF59ufofAAAA//8DAAzkXkmhCgAA
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 853311f6ed9e982a-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:44:40 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '13993'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '298148'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 370ms
+      x-request-id:
+      - req_5e062acf31c0d01293e96d916c215c86
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "Progressively summarize the
+      lines of conversation provided, adding onto the previous summary returning a
+      new summary.\n\nEXAMPLE\nCurrent summary:\nThe human asks what the AI thinks
+      of artificial intelligence. The AI thinks artificial intelligence is a force
+      for good.\n\nNew lines of conversation:\nHuman: Why do you think artificial
+      intelligence is a force for good?\nAI: Because artificial intelligence will
+      help humans reach their full potential.\n\nNew summary:\nThe human asks what
+      the AI thinks of artificial intelligence. The AI thinks artificial intelligence
+      is a force for good because it will help humans reach their full potential.\nEND
+      OF EXAMPLE\n\nCurrent summary:\n\n\nNew lines of conversation:\nHuman: Come
+      up with a list of 5 interesting ideas to explore for an article, then write
+      one amazing paragraph highlight for each idea that showcases how good an article
+      about this topic could be. Return the list of ideas with their paragraph and
+      your notes.\nAI: Here are the five interesting ideas for an article with a highlight
+      paragraph for each:\n\n1. The Evolution of Artificial Intelligence:\nDive deep
+      into the fascinating journey of artificial intelligence, from its humble beginnings
+      as a concept in science fiction to an integral part of our daily lives and a
+      catalyst of modern innovations. Explore how AI has evolved over the years, the
+      key milestones that have shaped its growth, and the visionary minds behind these
+      advancements. Uncover the remarkable transformation of AI and its astounding
+      potential for the future.\n\n2. AI in Everyday Life:\nUncover the unseen impact
+      of AI in our every day lives, from our smartphones and home appliances to social
+      media and healthcare. Learn about the subtle yet profound ways AI has become
+      a silent partner in your daily routine, enhancing convenience, productivity,
+      and decision-making. Explore the numerous applications of AI right at your fingertips
+      and how it shapes our interactions with technology and the world around us.\n\n3.
+      Ethical Implications of AI:\nVenture into the ethical labyrinth of artificial
+      intelligence, where innovation meets responsibility. Explore the implications
+      of AI on privacy, job security, and societal norms, and the moral obligations
+      we have towards its development and use. Delve into the thought-provoking debates
+      about AI ethics and the measures being taken to ensure its responsible and equitable
+      use.\n\n4. The Rise of AI Startups:\nWitness the rise of AI startups, the new
+      champions of innovation, driving the technology revolution. Discover how these
+      trailblazing companies are harnessing the power of AI to solve complex problems,
+      create new markets, and revolutionize industries. Learn about their unique challenges,
+      their groundbreaking solutions, and the potential they hold for reshaping the
+      future of technology and business.\n\n5. AI and the Environment:\nExplore the
+      intersection of AI and the environment, where technology meets sustainability.
+      Uncover how AI is being used to combat climate change, conserve biodiversity,
+      and optimize resource utilization. Learn about the innovative ways AI is being
+      used to create a sustainable future and the challenges and opportunities it
+      presents.\n\nNew summary:"}], "model": "gpt-4", "n": 1, "stream": false, "temperature":
+      0.0}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '3333'
+      content-type:
+      - application/json
+      cookie:
+      - __cf_bm=EBAvl3g_XqkWdcmiw8Ml6O7WPWo5VXs8r3SwmJVLUZw-1707554605-1-AUZKfV35H8Wp5ossrlc6jtZ9dhgqLrVrl+ZF0jOXXdI0dpVcIvTttF7f8Pl5ZI2Pih3rfueXBSRF9vmqggAOPCk=;
+        _cfuvid=pTnBIy95g3oEDKgA4dLOO3E_dCa6hkilxXzbh8LPWMM-1707554605073-0-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1STTW/bMAyG7/kVhG8F0iBpk7XNLYdgCNDDsHY7bBgKRaZttrKoilQ+UPS/D5LT
+        ZrsYsF6+5COKfBsBVFRXS6hsZ9T2wV3evtZfH9ah/fHtdbaaXv16DXOex58vh+f28b4aZwdvn9Hq
+        h2tiuQ8OldgPso1oFHPW2c30ZrGYf7mdFqHnGl22tUEv55fTL7Prk6NjsijVEn6PAADeyjez+RoP
+        1RKKv5z0KGJarJafQQBVZJdPKiNCosZrNT6Llr2iL7iPHUKXeuPByIuAdgirDSiD5R4hBdiTdtDQ
+        DoG8YkRR8i1QjUag4QjZGZWsQzC+hn0kRTDQUds5ajuFYKJpowldCUdjuwk8DmUktS2KDmUbdo73
+        OblyICtLmF2UwPWOXcq9BG5gFZUasmQcbLyic9SitziGmsQmkQKnAh2JcjwWpsD5ttnSJE0RJ3B1
+        kcuTh/UO47E2R7inBseAh+A45hwd70tIH4xVAU4RakPuCJGTkkcpmUtLjM1wMoHrC1hrRzaz9cGR
+        NUUo2Jsx1Oh2Bc8rlxv3HI0reYQtoRoHJJJQQFKMnHydw1ebCcyHTnwnwSEbPKiJmoKMz53+wNYO
+        BfP7BeMpg0aEOtKptuddwTrVHZCGeT1AiLx12MsEFqVDOSaTrv2OIvseveYmmZ78v00S2GL+T4J1
+        nh1T1xFFAM+2893Ki0TuWREkiRryZkuO9DipTiP6/jnbjtvMlPfAJ+c+zxvyJN1TRCPs8xyLchjs
+        7yOAP2WH0n9rUeWiQZ+UX9DnhIu70w5V53U9q7Oru5OqrMadhZvZ3eiEWMlRFPunhnyLMUQqO5VB
+        R++jvwAAAP//AwDESznZSgQAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 853312506839982a-SJC
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 10 Feb 2024 08:44:45 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - user-z7g4wmlazxqvc5wjyaaaocfz
+      openai-processing-ms:
+      - '4990'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299185'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 162ms
+      x-request-id:
+      - req_535af04a0c1f08c599cc7c54b4519736
+    status:
+      code: 200
+      message: OK
+version: 1
