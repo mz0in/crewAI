@@ -33,6 +33,11 @@ Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By 
                     Crews
                 </a>
             </li>
+            <li>
+                <a href="./core-concepts/Memory">
+                    Memory
+                </a>
+            </li>
         </ul>
     </div>
     <div style="width:30%">
@@ -44,7 +49,12 @@ Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By 
                 </a>
             </li>
             <li>
-                <a href="./how-to/how-to/Sequential">
+                <a href="./how-to/Create-Custom-Tools">
+                    Create Custom Tools
+                </a>
+            </li>
+            <li>
+                <a href="./how-to/Sequential">
                     Using Sequential Process
                 </a>
             </li>
@@ -66,6 +76,11 @@ Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By 
             <li>
                 <a href="./how-to/Human-Input-on-Execution">
                     Human Input on Execution
+                </a>
+            </li>
+            <li>
+                <a href="./how-to/AgentOps-Observability.md">
+                    Agent Observability using AgentOps
                 </a>
             </li>
         </ul>
